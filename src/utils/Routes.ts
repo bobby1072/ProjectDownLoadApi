@@ -20,13 +20,10 @@ export default class Routes {
         if (devTypeAndExtension.deviceType === "Mac os")
           throw new Error(Constants.NoMacVersion);
 
-        const file = path.join(
-          __dirname,
-          `../applications/movieAssistant/movie-assistant-${devTypeAndExtension.deviceTypeAb}-setup.${devTypeAndExtension.extension}`
-        );
-
         res.status(200);
-        res.download(file);
+        res.download(
+          `./src/applications/movieAssistant/movie-assistant-${devTypeAndExtension.deviceTypeAb}-setup.${devTypeAndExtension.extension}`
+        );
       } catch (e) {
         let message = Constants.InternalServerError;
 
