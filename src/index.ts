@@ -4,7 +4,7 @@ import cors from "cors";
 import bodyParser from "body-parser";
 import Routes from "./utils/Routes";
 
-class Program {
+abstract class Program {
   private static _app: Application = express();
   public static Main(): void {
     try {

@@ -1,9 +1,8 @@
 import { Application, Request, Response } from "express";
-import path from "path";
 import Constants from "../common/Constants";
 import uaParser from "ua-parser-js";
 
-export default class Routes {
+export default abstract class Routes {
   public static async MovieAssistantDownload(app: Application) {
     app.get("/movie-assistant", async (req: Request, res: Response) => {
       try {

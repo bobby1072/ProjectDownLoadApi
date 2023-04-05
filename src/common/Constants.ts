@@ -4,7 +4,7 @@ interface IDeviceTypeAndExtension {
   extension: "dmg" | "exe";
 }
 
-export default class Constants {
+export default abstract class Constants {
   public static InvalidDevice: string =
     "There's no app version for this device type";
   public static InternalServerError: string = "Internal server error";
