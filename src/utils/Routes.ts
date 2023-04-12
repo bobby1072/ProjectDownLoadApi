@@ -47,8 +47,8 @@ export default abstract class Routes {
   public static async FishLoggerDownload(app: Application) {
     this._downloadMethod(
       app,
-      "./src/applications/fish-logger/fish-logger",
-      "fish-logger"
+      "./src/applications/the-fish-suite/the-fish-suite",
+      "the-fish-suite"
     );
   }
 }
