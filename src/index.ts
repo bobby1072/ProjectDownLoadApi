@@ -15,6 +15,8 @@ abstract class Program {
 
       Routes.MovieAssistantDownload(this._app);
       Routes.FishLoggerDownload(this._app);
+      Routes.PokedexDownload(this._app);
+      Routes.SystemDashDownload(this._app);
 
       const portVar: number = Number(process.env.PORT) || 5000;
       this._app.listen(portVar, "0.0.0.0", () =>

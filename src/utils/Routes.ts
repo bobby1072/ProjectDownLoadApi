@@ -51,4 +51,14 @@ export default abstract class Routes {
       "the-fish-suite"
     );
   }
+  public static async PokedexDownload(app: Application) {
+    this._downloadMethod(app, "./src/applications/pokedex/pokedex", "pokedex");
+  }
+  public static async SystemDashDownload(app: Application) {
+    this._downloadMethod(
+      app,
+      "./src/applications/systemDashBoard/system-dashboard",
+      "system-dashboard"
+    );
+  }
 }
